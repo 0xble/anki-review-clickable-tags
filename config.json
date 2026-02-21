@@ -1,0 +1,7 @@
+{
+  "single_click_scope": "all",
+  "double_click_scope": "current_deck",
+  "visible_tag_levels": 0,
+  "show_hash_prefix": false,
+  "sort_tags": true
+}

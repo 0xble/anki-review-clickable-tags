@@ -1,0 +1,33 @@
+.rct-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.rct-tag {
+  appearance: none;
+  border: 1px solid var(--border, #cfcfcf);
+  border-radius: 0.35rem;
+  background: var(--canvas, #f7f7f7);
+  color: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font: inherit;
+  font-size: 0.8rem;
+  line-height: 1.15;
+  padding: 0.18rem 0.45rem;
+  white-space: nowrap;
+}
+
+.rct-tag:hover {
+  filter: brightness(0.95);
+}
+
+.rct-tag:focus-visible {
+  outline: 2px solid var(--fg-link, #2f6fed);
+  outline-offset: 1px;
+}

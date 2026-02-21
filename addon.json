@@ -1,0 +1,9 @@
+{
+  "name": "Clickable Tags v3.0",
+  "package": "review_clickable_tags",
+  "homepage": "https://github.com/0xble/anki-review-clickable-tags",
+  "min_point_version": 0,
+  "support_channels": {
+    "github": "https://github.com/0xble/anki-review-clickable-tags/issues"
+  }
+}
