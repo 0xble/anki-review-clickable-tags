@@ -155,16 +155,16 @@ def _build_search_query(tag: str, deck: str, action: str) -> str | None:
     if scope == "none":
         return None
 
-    tag_term = _quote_search_term("tag", tag)
+    tag_term = _quote_search_argument("tag", tag)
     if scope == "current_deck" and deck:
-        deck_term = _quote_search_term("deck", deck)
+        deck_term = _quote_search_argument("deck", deck)
         return f"{tag_term} {deck_term}"
     return tag_term
 
 
-def _quote_search_term(prefix: str, value: str) -> str:
+def _quote_search_argument(prefix: str, value: str) -> str:
     escaped = value.replace("\\", "\\\\").replace('"', '\\"')
-    return f'"{prefix}:{escaped}"'
+    return f'{prefix}:"{escaped}"'
 
 
 def _get_config() -> AddonConfig:
